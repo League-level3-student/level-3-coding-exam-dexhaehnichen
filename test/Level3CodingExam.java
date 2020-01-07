@@ -39,8 +39,33 @@ public class Level3CodingExam {
 		votes.add("edward Snowden");
 
 		assertEquals("TIE", new VoteProcessor().calculateElectionWinner(votes));
+	
+	
 	}
 
+	/*public String calculateElectionWinner(ArrayList<String> votes) {
+		int winner = 0;
+		// positive = pope francis, negative = edward snowden
+		for (int i = 0; i < votes.size(); i++) {
+			if(votes.get(i).equalsIgnoreCase("Pope Francis")) {
+				winner ++;
+			}else if(votes.get(i).equalsIgnoreCase("Edward Snowden")) {
+				winner --;
+			}
+		}
+		if(winner > 0) {
+			return "pope francis"; 
+		}else if(winner < 0) {
+			return "edward snowden";
+		}else if(winner == 0) {
+			return "TIE";
+		}else {
+			return "TIE";
+		}
+		
+	}*/
+	
+	
 	/** 
 	 * PART B
 	 * 
@@ -66,6 +91,7 @@ public class Level3CodingExam {
 		hashmap2.put("Jim", "Sick");
 
 		assertEquals(2, new HashMapCalculator().commonKeyValuePairs(hashmap1, hashmap2));
+	
 	}
 }
 
